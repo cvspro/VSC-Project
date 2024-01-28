@@ -5,6 +5,7 @@ df=pd.DataFrame({
     "A":np.array([3]*4),
     "B":pd.Series(1,index=list(range(4)),dtype='float32'),
     "C":pd.Timestamp("20230102"),
-    "D": "foo"
+    "D": "foo",
+    "E":pd.Categorical(['I','LOVE','YOU','LOTS'])
 })
 print(df)
