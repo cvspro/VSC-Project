@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 # df=pd.DataFrame(np.random.randn(6,4),columns=list("ABCD"),index=[1,2,3,4,5,6])
 df=pd.DataFrame({
-    "A":pd.Series([3]*4)
+    "A":np.array([3]*4),
+    "B":pd.Series(1,index=list(range(4)),dtype='float32')
 })
 print(df)
